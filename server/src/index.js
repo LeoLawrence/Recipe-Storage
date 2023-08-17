@@ -14,6 +14,6 @@ app.use(cors()); // lets us make API requests from the front end using cors
 app.use("/auth", userRouter);
 app.use("/recipes", recipeRouter);
 
-mongoose.connect("mongodb+srv://leoLawrence:S4uxUDnTzePY@recipes.symfail.mongodb.net/recipes?retryWrites=true&w=majority");// revision note: swap password with env
+mongoose.connect("{link here}");// add in the link to your MongoDB database here.
 app.listen(3001, () => console.log("SERVER STARTED!")); // using 3001 since 3000 is used in this project for frontend
 
